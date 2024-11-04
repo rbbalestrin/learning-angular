@@ -8,6 +8,6 @@ import { Component, input, Input } from '@angular/core';
   styleUrl: './dashboard-item.component.css',
 })
 export class DashboardItemComponent {
-  @Input() title!: string;
+  @Input({ required: true }) title!: string;
   @Input() logo: string | undefined;
 }
