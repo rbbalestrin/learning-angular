@@ -1,20 +1,13 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from './navbar/navbar.component';
-import { ServerStatusComponent } from './server-status/server-status.component';
-import { TrafficComponent } from './traffic/traffic.component';
-import { SupportTicketsComponent } from './support-tickets/support-tickets.component';
-import { DashboardItemComponent } from './dashboard-item/dashboard-item.component';
+
+import { AuthComponent } from './auth/auth.component';
+import { LearningResourcesComponent } from './learning-resources/learning-resources.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
-  imports: [
-    NavbarComponent,
-    ServerStatusComponent,
-    TrafficComponent,
-    SupportTicketsComponent,
-    DashboardItemComponent,
-  ],
+  styleUrl: './app.component.css',
+  imports: [AuthComponent, LearningResourcesComponent],
 })
 export class AppComponent {}
