@@ -1,14 +1,30 @@
-<app-navbar />
 <main>
-  <div id="dashboard">
-    <app-dashboard-item [logo]="'status.png'" [title]="'Server Status'">
-      <app-server-status />
-    </app-dashboard-item>
-    <app-dashboard-item [logo]="'globe.png'" [title]="'Traffic'">
-      <app-traffic />
-    </app-dashboard-item>
-    <app-dashboard-item [logo]="'list.png'" [title]="'Support Tickets'">
-      <app-support-tickets />
-    </app-dashboard-item>
-  </div>
+  <article class="temperatures">
+    <header>
+      <img src="temp-icon.png" alt="Thermometer icon" />
+      <div>
+        <h2>Current Temperatures</h2>
+        <p>{{ currentDate }}</p>
+      </div>
+    </header>
+    <p>New York: {{ currentTemperaturs.newYork }}</p>
+    <p>Berlin: {{ currentTemperaturs.berlin }}</p>
+    <p>Paris: {{ currentTemperaturs.paris }}</p>
+    <p>Chicago: {{ currentTemperaturs.chicago }}</p>
+  </article>
+
+  <article class="temperatures">
+    <header>
+      <img src="temp-icon.png" alt="Thermometer icon" />
+      <div>
+        <h2>Historic Temperatures</h2>
+        <p>Berlin</p>
+      </div>
+    </header>
+    <ul>
+      @for (temperature of historicTemperatures; track temperature) {
+      <li (click)="onReset($index)">{{ temperature }}</li>
+      }
+    </ul>
+  </article>
 </main>

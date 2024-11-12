@@ -1,20 +1,24 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from './navbar/navbar.component';
-import { ServerStatusComponent } from './server-status/server-status.component';
-import { TrafficComponent } from './traffic/traffic.component';
-import { SupportTicketsComponent } from './support-tickets/support-tickets.component';
-import { DashboardItemComponent } from './dashboard-item/dashboard-item.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
-  imports: [
-    NavbarComponent,
-    ServerStatusComponent,
-    TrafficComponent,
-    SupportTicketsComponent,
-    DashboardItemComponent,
-  ],
 })
-export class AppComponent {}
+export class AppComponent {
+  currentDate = new Date();
+  currentTemperaturs = {
+    berlin: 4.2749812,
+    newYork: 18.1214,
+    paris: 72.1209001,
+    chicago: 65.0775238,
+  };
+
+  historicTemperatures = [
+    25, 37, 19, -4, 28, 21, 19, 28, 33, 31, 9, 11, 5, -12, -5,
+  ];
+
+  onReset(index: number) {
+    this.historicTemperatures[index] = 18;
+  }
+}
