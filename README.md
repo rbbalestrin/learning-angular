@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # PipesDeepDive
+=======
+# DirectivesDeepDive
+>>>>>>> a1c17de75bdf245250eabba5ceaff880400b8ea4
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
 

@@ -12,6 +12,7 @@ html {
 
 body {
   margin: 0;
+<<<<<<< HEAD
   background-color: #132429;
   color: #b8def9;
 }
@@ -64,4 +65,7 @@ main {
 
 .temperatures li {
   margin: 0.5rem;
+=======
+  background-color: #010f13;
+>>>>>>> a1c17de75bdf245250eabba5ceaff880400b8ea4
 }

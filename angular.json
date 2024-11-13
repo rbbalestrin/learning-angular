@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "pipes-deep-dive": {
+=======
+    "directives-deep-dive": {
+>>>>>>> a1c17de75bdf245250eabba5ceaff880400b8ea4
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +17,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/pipes-deep-dive",
+=======
+            "outputPath": "dist/directives-deep-dive",
+>>>>>>> a1c17de75bdf245250eabba5ceaff880400b8ea4
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +67,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "buildTarget": "pipes-deep-dive:build:production"
             },
             "development": {
               "buildTarget": "pipes-deep-dive:build:development"
+=======
+              "buildTarget": "directives-deep-dive:build:production"
+            },
+            "development": {
+              "buildTarget": "directives-deep-dive:build:development"
+>>>>>>> a1c17de75bdf245250eabba5ceaff880400b8ea4
             }
           },
           "defaultConfiguration": "development"
@@ -70,7 +85,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "buildTarget": "pipes-deep-dive:build"
+=======
+            "buildTarget": "directives-deep-dive:build"
+>>>>>>> a1c17de75bdf245250eabba5ceaff880400b8ea4
           }
         },
         "test": {
