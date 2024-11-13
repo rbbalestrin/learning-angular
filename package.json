@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "pipes-deep-dive",
-=======
-  "name": "directives-deep-dive",
->>>>>>> a1c17de75bdf245250eabba5ceaff880400b8ea4
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
